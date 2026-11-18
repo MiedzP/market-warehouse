@@ -1,0 +1,28 @@
+version: 2
+models:
+  - name: dim_date
+    columns:
+      - name: date_key
+        tests: [unique, not_null]
+  - name: dim_instrument
+    columns:
+      - name: instrument_key
+        tests: [unique, not_null]
+      - name: symbol
+        tests: [unique, not_null]
+  - name: dim_macro_series
+    columns:
+      - name: series_key
+        tests: [unique, not_null]
+  - name: fct_prices_daily
+    columns:
+      - name: date_key
+        tests:
+          - not_null
+          - relationships:
+              arguments: {to: ref('dim_date'), field: date_key}
+      - name: instrument_key
+        tests:
+          - not_null
+          - relationships:
+              arguments: {to: ref('dim_instrument'), field: instrument_key}

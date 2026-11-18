@@ -1,0 +1,22 @@
+symbol,asset_class,description
+SPY,equity,S&P 500 ETF
+QQQ,equity,Nasdaq-100 ETF
+IWM,equity,Russell 2000 ETF
+XLB,equity,Materials sector
+XLE,equity,Energy sector
+XLF,equity,Financials sector
+XLI,equity,Industrials sector
+XLK,equity,Technology sector
+XLP,equity,Consumer staples sector
+XLU,equity,Utilities sector
+XLV,equity,Health care sector
+XLY,equity,Consumer discretionary sector
+TLT,bond,20+ year Treasury ETF
+GLD,commodity,Gold ETF
+EURUSD=X,fx,USD per EUR
+GBPUSD=X,fx,USD per GBP
+AUDUSD=X,fx,USD per AUD
+JPY=X,fx,JPY per USD
+CAD=X,fx,CAD per USD
+CHF=X,fx,CHF per USD
+^VIX,volatility,CBOE Volatility Index

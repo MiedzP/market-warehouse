@@ -1,0 +1,7 @@
+market_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "C:/Users/mcpag/market-warehouse/warehouse/market.duckdb"
+      threads: 4
