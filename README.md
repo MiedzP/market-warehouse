@@ -37,7 +37,7 @@ See `reports/backtest_oos.md` for the full tables. Out-of-sample 2015-2026, afte
 
 ## Caveats
 
-- **Survivorship bias.** The S&P 500 list is today's constituents, so the Spark results overstate what was investable historically.
+- **Survivorship bias.** The S&P 500 list reflects today's constituents, so the Spark results overstate what was historically investable.
 - **Look-ahead.** Signals use month-end data only, and positions earn the next month's return. The LLM leg must also be point-in-time before its results mean anything.
 - **Risk-free rate** is set to 0 in Sharpe ratios.
 - **Scale.** The Spark job handles about 3M rows, which is small enough for pandas. Spark is used here to show the skill, not because the data needs it.
